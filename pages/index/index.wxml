@@ -1,0 +1,21 @@
+<import src="type_template.wxml"/>
+<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+  <view wx:for="{{classify}}" wx:key="id" data-type="{{item.id}}"  class="scroll-view-item_H {{curTab==item.id?'sv-item-on':'sv-item-off'}}" bindtap="classifyClick">
+    {{item.name}}
+  </view>
+</scroll-view>
+<swiper current="{{curTab}}" class="swiper-box" duration="300">  
+  <block wx:for="{{classify}}" wx:key="id">
+    <swiper-item>
+      <template is="recommend" data="{{...classify[curTab]}}"/>
+    </swiper-item>
+  </block> 
+</swiper>  
+
+
+<!-- <scroll-view style="width: 100%">
+  <view wx:for="{{list}}" wx:key="_id">
+     <image src="{{item.url}}" mode="widthFix" class="meizhi"></image> 
+    
+  </view>
+</scroll-view> -->

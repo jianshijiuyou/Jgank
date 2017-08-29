@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "无聊",
+    "backgroundColor": "#088",
+    "navigationBarBackgroundColor": "#088",
+    "backgroundTextStyle": "dark"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

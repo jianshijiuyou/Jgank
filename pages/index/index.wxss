@@ -1,0 +1,30 @@
+.meizhi{
+  width: 100%;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+}
+
+.scroll-view-item_H{
+  display: inline-block;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.sv-item-on{
+  background-color: #0aa;
+  color: #ddd;
+}
+
+.sv-item-off{
+  background-color: #088;
+  color: #fff;
+}
+
+.swiper-box{
+  height: 100%;
+  width: 100%; 
+} 
