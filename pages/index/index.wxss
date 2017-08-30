@@ -23,8 +23,3 @@
   background-color: #088;
   color: #fff;
 }
-
-.swiper-box{
-  height: 100%;
-  width: 100%; 
-} 

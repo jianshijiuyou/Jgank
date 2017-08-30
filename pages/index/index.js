@@ -28,6 +28,7 @@ Page({
     if (this.data.curTab == e.currentTarget.dataset.type){
       return
     }
+    console.log("切换")
     this.setData({
       curTab: e.currentTarget.dataset.type
     })

@@ -1,17 +1,16 @@
-<import src="type_template.wxml"/>
 <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
   <view wx:for="{{classify}}" wx:key="id" data-type="{{item.id}}"  class="scroll-view-item_H {{curTab==item.id?'sv-item-on':'sv-item-off'}}" bindtap="classifyClick">
     {{item.name}}
   </view>
 </scroll-view>
-<swiper current="{{curTab}}" class="swiper-box" duration="300">  
-  <block wx:for="{{classify}}" wx:key="id">
-    <swiper-item>
-      <template is="recommend" data="{{...classify[curTab]}}"/>
-    </swiper-item>
-  </block> 
-</swiper>  
 
+<block wx:if="{{curTab ==0}}"> {{classify[curTab].name}} </block>
+<block wx:elif="{{curTab==1}}"> {{classify[curTab].name}} </block>
+<block wx:elif="{{curTab==2}}"> {{classify[curTab].name}} </block>
+<block wx:elif="{{curTab==3}}"> {{classify[curTab].name}} </block>
+<block wx:elif="{{curTab==4}}"> {{classify[curTab].name}} </block>
+<block wx:elif="{{curTab==5}}"> {{classify[curTab].name}} </block>
+<block wx:else> {{classify[curTab].name}} </block>
 
 <!-- <scroll-view style="width: 100%">
   <view wx:for="{{list}}" wx:key="_id">

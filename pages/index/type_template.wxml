@@ -1,5 +1,0 @@
-<template name="recommend">
-  <view>
-    <text> {{id}}: {{name}} </text>
-  </view>
-</template>
