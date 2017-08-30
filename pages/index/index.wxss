@@ -8,10 +8,9 @@
 
 .scroll-view-item_H{
   display: inline-block;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
-  padding-top: 20rpx;
-  padding-bottom: 20rpx;
+  line-height: 80rpx;
+  width: 180rpx;
+  text-align: center;
 }
 
 .sv-item-on{
