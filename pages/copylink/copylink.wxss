@@ -1,0 +1,20 @@
+view{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.btn{
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #088;
+  border-radius: 10rpx;
+  height: 80rpx;
+  color: #fff;
+}
+
+.textGray{
+  color: #aaa;
+  word-wrap: break-word;
+}

@@ -1,3 +1,6 @@
 page {
   height: 100%;
 }
+.theme-color{
+  background-color: #088;
+}

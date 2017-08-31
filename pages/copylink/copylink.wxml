@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view>因小程序限制，无法直接打开原文链接</view>
+<image src="../images/juewang.jpg" mode="aspectFit"></image>
+<view>只能复制链接自己解决咯</view>
+<view class="textGray">{{url}}</view>
+<view class="btn" bindtap="copyBtnClick" data-url="{{url}}">复制</view>

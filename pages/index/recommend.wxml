@@ -1,0 +1,52 @@
+<image src="{{recommend['福利'][0].url}}" mode="aspectFill" class="recommend_head" bindtap="imgClick" data-img-url="{{recommend['福利'][0].url}}"></image>
+
+<block wx:for="{{recommend}}" wx:for-item="rItem">
+  <block wx:if="{{rItem[0].type!='福利'}}">
+    <view class="recommend_title theme-color">{{rItem[0].type}}</view>
+      <view wx:for="{{rItem}}" wx:key="_id" class="list_item" bindtap="itemClick" data-url="{{item.url}}">
+        <view>{{item.desc}}</view>
+        <view wx:if="{{item.images}}"> 
+          <image src="{{item.images[0]+'?imageView2/0/w/200'}}" mode="aspectFit" catchtap="imgClick" data-img-url="{{item.images[0]}}"></image>
+        </view>
+        <view class="who">{{item.who}}</view>
+      </view>
+  </block>
+</block>
+
+
+<!-- <view class="recommend_title theme-color">ios</view>
+<view wx:for="{{recommend.iOS}}" wx:key="_id" class="list_item">
+  <view>{{item.desc}}</view>
+  <view wx:if="{{item.images}}"> 
+    <image src="{{item.images[0]+'?imageView2/0/w/200'}}" mode="aspectFit" bindtap="imgClick" data-img-url="{{item.images[0]}}"></image>
+  </view>
+  <view class="who">{{item.who}}</view>
+</view>
+
+
+<view class="recommend_title theme-color">休息视频</view>
+<view wx:for="{{recommend['休息视频']}}" wx:key="_id" class="list_item">
+  <view>{{item.desc}}</view>
+  <view wx:if="{{item.images}}"> 
+    <image src="{{item.images[0]+'?imageView2/0/w/200'}}" mode="aspectFit" bindtap="imgClick" data-img-url="{{item.images[0]}}"></image>
+  </view>
+  <view class="who">{{item.who}}</view>
+</view>
+
+<view class="recommend_title theme-color">前端</view>
+<view wx:for="{{recommend['前端']}}" wx:key="_id" class="list_item">
+  <view>{{item.desc}}</view>
+  <view wx:if="{{item.images}}"> 
+    <image src="{{item.images[0]+'?imageView2/0/w/200'}}" mode="aspectFit" bindtap="imgClick" data-img-url="{{item.images[0]}}"></image>
+  </view>
+  <view class="who">{{item.who}}</view>
+</view>
+
+<view class="recommend_title theme-color">拓展资源</view>
+<view wx:for="{{recommend['拓展资源']}}" wx:key="_id" class="list_item">
+  <view>{{item.desc}}</view>
+  <view wx:if="{{item.images}}"> 
+    <image src="{{item.images[0]+'?imageView2/0/w/200'}}" mode="aspectFit" bindtap="imgClick" data-img-url="{{item.images[0]}}"></image>
+  </view>
+  <view class="who">{{item.who}}</view>
+</view> -->
