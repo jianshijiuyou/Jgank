@@ -1,6 +1,7 @@
 .scroll-view_H{
   white-space: nowrap;
   position: fixed;
+  z-index: 999;
 }
 
 .scroll-view-item_H{
@@ -47,4 +48,13 @@
   margin-left: 15rpx;
   border-radius: 10rpx;
   color: #fff;
+}
+
+/*福利*/
+.welfare-head{
+  height: 80rpx;
+}
+.welfare-img-item{
+  display: inline-block;
+  width: 50%;
 }
