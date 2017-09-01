@@ -34,6 +34,10 @@
     color: #aaa;
 }
 
+.empty-head{
+  height: 80rpx;
+}
+
 /*推荐部分*/
 .recommend_head{
   width: 100%;
@@ -51,9 +55,7 @@
 }
 
 /*福利*/
-.welfare-head{
-  height: 80rpx;
-}
+
 .welfare-img-item{
   display: inline-block;
   width: 50%;

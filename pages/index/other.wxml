@@ -1,0 +1,8 @@
+<view class="empty-head"></view>
+<view wx:for="{{other}}" wx:key="_id" class="list_item" bindtap="itemClick" data-url="{{item.url}}">
+      <view>{{item.desc}}</view>
+      <view wx:if="{{item.images}}"> 
+        <image src="{{item.images[0]+'?imageView2/0/w/200'}}" mode="aspectFit" catchtap="imgClick" data-img-url="{{item.images[0]}}"></image>
+      </view>
+      <view class="who">{{item.who}}</view>
+</view>

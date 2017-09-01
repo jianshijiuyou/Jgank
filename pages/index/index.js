@@ -1,5 +1,6 @@
 Page({
   data:{
+    other:[],
     classify: [{ id: 0, name: "推荐" }, 
     { id: 1, name: "福利" }, 
     { id: 2, name: "Android" }, 
@@ -29,17 +30,39 @@ Page({
     })
   },
   classifyClick:function(e){
-    if (this.data.curTab == e.currentTarget.dataset.type){
-      return
-    } else if (e.currentTarget.dataset.type==1){
-      //请求福利数据
-      this.requestWelfare()
-    }
     
+    if (this.data.curTab == e.currentTarget.dataset.type) {
+      return
+    } 
+
+    var page = this
 
     this.setData({
-      curTab: e.currentTarget.dataset.type
+      curTab: e.currentTarget.dataset.type,
+      curPage: 1,
+      other:[]
     })
+
+    if (e.currentTarget.dataset.type==1){
+      //请求福利数据
+      this.requestData("https://gank.io/api/data/福利/10/1", function (res) {
+        wx.hideLoading()
+        page.setData({
+          welfare: res.data.results
+        })
+      })
+    } else if (e.currentTarget.dataset.type == 2){
+      //请求android数据
+      this.reqeustOtherData("Android",1)
+    } else if (e.currentTarget.dataset.type == 3) {
+      this.reqeustOtherData("iOS", 1)
+    } else if (e.currentTarget.dataset.type == 4) {
+      this.reqeustOtherData("休息视频", 1)
+    } else if (e.currentTarget.dataset.type == 5) {
+      this.reqeustOtherData("拓展资源", 1)
+    } else if (e.currentTarget.dataset.type == 6) {
+      this.reqeustOtherData("前端", 1)
+    }
   },
   requestRecommend:function(url){
     var page = this
@@ -69,9 +92,25 @@ Page({
       url: "../copylink/copylink?url=" + url
     })
   },
-  requestWelfare:function(){
-    var page = this
-    var url = encodeURI("https://gank.io/api/data/福利/10/1")
+  requestData:function(url,callback){
+    var url = encodeURI(url)
+    wx.showLoading({
+      title: "加载中",
+      mask: true
+    })
+    wx.request({
+      url: url,
+      method: "GET",
+      success: callback,
+      fail: function () {
+        wx.hideLoading()
+      }
+    })
+  },
+  reqeustOtherData:function(rtype,pageNumber){
+    var page=this
+    var url = encodeURI("https://gank.io/api/data/" + rtype + "/10/" + pageNumber)
+    
     wx.showLoading({
       title: "加载中",
       mask: true
@@ -80,10 +119,10 @@ Page({
       url: url,
       method: "GET",
       success: function (res) {
-  
         wx.hideLoading()
         page.setData({
-          welfare: res.data.results
+          other: page.data.other.concat(res.data.results),
+          scrollTop: 0
         })
       },
       fail: function () {
@@ -103,5 +142,36 @@ Page({
       current: url,
       urls: list // 需要预览的图片http链接列表
     })
+  },
+  onReachBottom:function(){
+    console.log("==========onReachBottom========" + this.data.curTab)
+
+    if(this.data.curTab==0){
+      return
+    }
+
+
+    var page = this
+    this.data.curPage = this.data.curPage+1
+    if (this.data.curTab == 1) {
+      //请求福利数据
+      this.requestData("https://gank.io/api/data/福利/10/" + this.data.curPage, function (res) {
+        wx.hideLoading()
+        page.setData({
+          welfare: page.data.welfare.concat(res.data.results)
+        })
+      })
+    } else if (this.data.curTab == 2) {
+      //请求android数据
+      this.reqeustOtherData("Android", this.data.curPage)
+    } else if (this.data.curTab == 3) {
+      this.reqeustOtherData("iOS", this.data.curPage)
+    } else if (this.data.curTab == 4) {
+      this.reqeustOtherData("休息视频", this.data.curPage)
+    } else if (this.data.curTab == 5) {
+      this.reqeustOtherData("拓展资源", this.data.curPage)
+    } else if (this.data.curTab == 6) {
+      this.reqeustOtherData("前端", this.data.curPage)
+    }
   }
 })
