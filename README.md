@@ -1,7 +1,7 @@
 
 ## 微信小程序 jgank
 一个 gank.io 的第三方微信小程序  
-![图片](http://os6ycxx7w.bkt.clouddn.com/github/Jgank/jgank_2_1.gif)
+![img](/img/jgank_2_1.gif)
 具体实现细节请看：  
 [微信小程序 Jgank 开发（一）](http://jiuyou.info/2017/08/30/jgank_1/)  
 [微信小程序 Jgank 开发（二）](http://jiuyou.info/2017/08/31/jgank_2/)
