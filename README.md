@@ -6,7 +6,8 @@
 
 具体实现细节请看：  
 [微信小程序 Jgank 开发（一）](http://jiuyou.info/2017/08/30/jgank_1/)  
-[微信小程序 Jgank 开发（二）](http://jiuyou.info/2017/08/31/jgank_2/)
+[微信小程序 Jgank 开发（二）](http://jiuyou.info/2017/08/31/jgank_2/)  
+[微信小程序 Jgank 开发（完结篇）](http://jiuyou.info/2017/09/04/jgank_3/)
 
 #### License
 ```
