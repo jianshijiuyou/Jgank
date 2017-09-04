@@ -1,5 +1,5 @@
 
-## 微信小程序 jgank
+## 微信小程序 Jgank
 一个 gank.io 的第三方微信小程序  
 
 ![img](/res/github_jgank_readme_1.gif)  
