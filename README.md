@@ -2,12 +2,12 @@
 ## 微信小程序 Jgank
 一个 gank.io 的第三方微信小程序  
 
-![img](/res/github_jgank_readme_1.gif)  
+![](http://os6ycxx7w.bkt.clouddn.com/github/Jgank/github_jgank_readme_1.png)  
 
 具体实现细节请看：  
-[微信小程序 Jgank 开发（一）](http://jiuyou.info/2017/08/30/jgank_1/)  
-[微信小程序 Jgank 开发（二）](http://jiuyou.info/2017/08/31/jgank_2/)  
-[微信小程序 Jgank 开发（完结篇）](http://jiuyou.info/2017/09/04/jgank_3/)
+[微信小程序 Jgank 开发（一）](tutorial/jgank_1.md)  
+[微信小程序 Jgank 开发（二）](tutorial/jgank_2.md)  
+[微信小程序 Jgank 开发（三）](tutorial/jgank_3.md)
 
 #### License
 ```
