@@ -1,13 +1,13 @@
 
-## Î¢ĞÅĞ¡³ÌĞò Jgank
-Ò»¸ö gank.io µÄµÚÈı·½Î¢ĞÅĞ¡³ÌĞò  
+## å¾®ä¿¡å°ç¨‹åº Jgank
+ä¸€ä¸ª gank.io çš„ç¬¬ä¸‰æ–¹å¾®ä¿¡å°ç¨‹åº 
 
-![](http://os6ycxx7w.bkt.clouddn.com/github/Jgank/github_jgank_readme_1.png)  
+![](https://pikachu666.oss-cn-hongkong.aliyuncs.com/github/Jgank/github_jgank_readme_1.png)  
 
-¾ßÌåÊµÏÖÏ¸½ÚÇë¿´£º  
-[Î¢ĞÅĞ¡³ÌĞò Jgank ¿ª·¢£¨Ò»£©](tutorial/jgank_1.md)  
-[Î¢ĞÅĞ¡³ÌĞò Jgank ¿ª·¢£¨¶ş£©](tutorial/jgank_2.md)  
-[Î¢ĞÅĞ¡³ÌĞò Jgank ¿ª·¢£¨Èı£©](tutorial/jgank_3.md)
+å…·ä½“å®ç°ç»†èŠ‚è¯·çœ‹ï¼š  
+[å¾®ä¿¡å°ç¨‹åº Jgank å¼€å‘ï¼ˆä¸€ï¼‰](tutorial/jgank_1.md)  
+[å¾®ä¿¡å°ç¨‹åº Jgank å¼€å‘ï¼ˆäºŒï¼‰](tutorial/jgank_2.md)  
+[å¾®ä¿¡å°ç¨‹åº Jgank å¼€å‘ï¼ˆä¸‰ï¼‰](tutorial/jgank_3.md)
 
 #### License
 ```
